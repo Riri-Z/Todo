@@ -17,7 +17,7 @@ const NavbarComponent = () => {
         <Typography
           variant="h6"
           color="inherit">
-          React Todo List ({tasks.length})
+          Todo List ({tasks.length})
         </Typography>
       </Toolbar>
     </AppBar>
