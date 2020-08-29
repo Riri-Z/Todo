@@ -27,7 +27,7 @@ const AddTaskComponent = () => {
     setDescription('')
   }
   return (
-    <form onSubmit={onAddTask}>
+    <form onSubmit={onAddTask} >
       <Grid
         container
         direction="row"

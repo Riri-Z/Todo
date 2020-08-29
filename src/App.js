@@ -10,7 +10,8 @@ import background from './pictures/sport.png';
 const Content = styled.div`
     background-color : #85DCB;
     background-image: url(${background});
-    min-height: 60vh;
+    
+    padding-bottom:100px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover ;

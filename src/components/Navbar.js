@@ -11,7 +11,7 @@ const NavbarComponent = () => {
   const { tasks } = useContext(TaskContext)
 
   return (
-    <AppBar position="static">
+    <AppBar position="sticky">
       <Toolbar variant="dense"
         style={{ justifyContent: "center" }} >
         <Typography
