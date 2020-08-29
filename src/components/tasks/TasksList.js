@@ -13,10 +13,14 @@ import LibraryAddCheckIcon from '@material-ui/icons/LibraryAddCheck';
 import { TaskContext } from '../../contexts/TaskContext';
 import { Action } from '../../reducer/TaskReducer';
 
+
+
+
 const useStyles = makeStyles((theme) => ({
   root: {
     width: '100%',
     backgroundColor: theme.palette.background.transparent,
+
   },
   marked: {
     textDecoration: 'line-through'
@@ -43,11 +47,16 @@ const TaskListComponent = () => {
     })
   }
   return (
+
     <List className={classes.root}>
       {sortedTasks.map((task) => {
         return (
+
+
+
           <ListItem key={task.id}
             role={undefined}
+            divider
             dense
             button
             onClick={() => {
@@ -59,6 +68,7 @@ const TaskListComponent = () => {
                 !task.isChecked ? (<CropFreeIcon />) : (<LibraryAddCheckIcon />)
               }
             </IconButton>
+
             <ListItemText primary={task.description}
               className={task.isChecked ? classes.marked : ''} />
             <ListItemSecondaryAction>
@@ -75,9 +85,15 @@ const TaskListComponent = () => {
               </IconButton>
             </ListItemSecondaryAction>
           </ListItem>
+
+
+
+
         );
       })}
-    </List>
+    </List >
+
+
   );
 }
 

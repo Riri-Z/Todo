@@ -5,17 +5,18 @@ import Container from '@material-ui/core/Container';
 import TaskContextProvider from './contexts/TaskContext';
 import TodoListComponent from './components/TodoList';
 import styled from 'styled-components';
-import background from './img.png';
+import background from './pictures/sport.png';
 
 const Content = styled.div`
-    
+    background-color : #85DCB;
     background-image: url(${background});
-    min-height: 960px;
+    min-height: 60vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover ;
-    height: 100%;
-    padding-top: 20%;
+    height: 960px;
+    padding-top: 10vh;
+    background-attachment: fixed;
     
 `;
 
