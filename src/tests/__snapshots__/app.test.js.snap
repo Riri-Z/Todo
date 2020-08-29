@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App List renders correctly 1`] = `
+<section
+  className="sc-AxjAm bFBxWV"
+>
+  <div
+    className="MuiContainer-root MuiContainer-fixed MuiContainer-maxWidthLg"
+  >
+    <header
+      className="MuiPaper-root MuiAppBar-root MuiAppBar-positionStatic MuiAppBar-colorPrimary MuiPaper-elevation4"
+    >
+      <div
+        className="MuiToolbar-root MuiToolbar-dense MuiToolbar-gutters"
+        style={
+          Object {
+            "justifyContent": "center",
+          }
+        }
+      >
+        <h6
+          className="MuiTypography-root MuiTypography-h6 MuiTypography-colorInherit"
+        >
+          React Todo List (
+          0
+          )
+        </h6>
+      </div>
+    </header>
+    <div
+      className="makeStyles-root-1"
+    >
+      <div
+        className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2"
+      >
+        <div
+          className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+        >
+          <form
+            onSubmit={[Function]}
+          >
+            <div
+              className="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
+            >
+              <div
+                className="MuiFormControl-root MuiTextField-root"
+              >
+                <label
+                  className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-marginDense MuiInputLabel-outlined"
+                  data-shrink={false}
+                >
+                  Add Task
+                </label>
+                <div
+                  className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-formControl MuiInputBase-marginDense MuiOutlinedInput-marginDense"
+                  onClick={[Function]}
+                >
+                  <input
+                    aria-invalid={false}
+                    autoFocus={false}
+                    className="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputMarginDense MuiOutlinedInput-inputMarginDense"
+                    disabled={false}
+                    onAnimationStart={[Function]}
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    onFocus={[Function]}
+                    required={false}
+                    type="text"
+                    value=""
+                  />
+                  <fieldset
+                    aria-hidden={true}
+                    className="PrivateNotchedOutline-root-2 MuiOutlinedInput-notchedOutline"
+                  >
+                    <legend
+                      className="PrivateNotchedOutline-legendLabelled-4"
+                    >
+                      <span>
+                        Add Task
+                      </span>
+                    </legend>
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div
+          className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+        >
+          <ul
+            className="MuiList-root makeStyles-root-6 MuiList-padding"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;
