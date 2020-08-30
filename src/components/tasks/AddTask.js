@@ -1,5 +1,4 @@
 import React, { useContext, useState } from 'react'
-
 import Grid from '@material-ui/core/Grid'
 import TextField from '@material-ui/core/TextField';
 import { TaskContext } from '../../contexts/TaskContext';
@@ -12,7 +11,6 @@ const AddTaskComponent = () => {
   const [description, setDescription] = useState('');
 
   const onAddTask = (e) => {
-
     e.preventDefault();
 
     dispatch({
@@ -26,6 +24,11 @@ const AddTaskComponent = () => {
     });
     setDescription('')
   }
+
+  const onChange = (e) => {
+    setDescription(e.target.value)
+  }
+
   return (
     <form onSubmit={onAddTask} >
       <Grid
@@ -35,15 +38,13 @@ const AddTaskComponent = () => {
         alignItems="center">
 
         <TextField
+          required
+          name='myForm'
           label="Add Task"
           variant="outlined"
           size="small"
           value={description}
-          onChange={
-            (e) => {
-              setDescription(e.target.value)
-            }
-          }
+          onChange={onChange}
         />
 
       </Grid>
